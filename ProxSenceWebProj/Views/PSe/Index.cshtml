@@ -1,0 +1,626 @@
+﻿@model ProxSence.Library.ProxSenceModels.FeedbackModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<header class="header">
+
+    <div class="container">
+        <div class="row">
+            <!-- Логотип -->
+            <div id="logo" class="logo-container col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                <a href="@Url.Action("Index", "PSe")"><div class="proxsence-logo"><span class="logo">PSe</span> ProxSence</div></a>
+            </div>
+
+            <!-- Основное меню -->
+            <div class="menu_main col-xs-8 col-sm-9 col-md-9 col-lg-9">
+
+                <div class="navbar yamm navbar-default">
+                    <!--
+                    <div class="navbar-header">
+                      <div class="navbar-toggle .navbar-collapse .pull-right " data-toggle="collapse" data-target="#navbar-collapse-1"  >
+                        <button type="button" > <i class="fa fa-bars"></i></button>
+                      </div>
+                    </div>-->
+
+                    <div id="navbar-collapse-1" class=" pull-right">
+
+                        <nav>
+
+                            <ul class="nav nav-pills">
+
+                                <li><a href="@Url.Action("Index", "PSe")" class="dropdown-toggle active">Главная</a></li>
+
+                                <li><a href="@Url.Action("Portfolio", "Portfolio")" class="dropdown-toggle">Портфолио</a></li>
+
+                                <li><a href="@Url.Action("About", "PSe")" class="dropdown-toggle">О нас</a></li>
+
+                                <li><a href="@Url.Action("Contact", "PSe")" class="dropdown-toggle">Контакты</a></li>
+
+                            </ul>
+
+                        </nav>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- конец Основное меню -->
+
+        </div>
+    </div>
+
+</header>
+
+
+<!-- Слайдер ======================================= -->
+
+<div class="slidermar">
+    <div class="master-slider ms-skin-default" id="masterslider">
+
+        <!-- Слайд 1 -->
+        <div class="ms-slide slide-1" data-delay="5">
+
+            <div class="slide-pattern"></div>
+
+            <img src="~/assets/masterslider/blank.gif" data-src="Images/sliders/master/11.jpg" alt="" />
+
+            <h3 class="ms-layer text11 caps"
+                style="left: 115px; top: 80px;"
+                data-type="text"
+                data-effect="top(45)"
+                data-duration="1800"
+                data-delay="0"
+                data-ease="easeOutExpo">
+                Конструирование сайтов
+
+            </h3>
+
+            <h1 class="ms-layer text11 caps"
+                style="left: 115px; top: 120px;"
+                data-type="text"
+                data-effect="left(45)"
+                data-duration="1800"
+                data-delay="300"
+                data-ease="easeOutExpo">
+                с использованием 
+
+            </h1>
+
+            <h1 class="ms-layer text12 caps"
+                style="left: 115px; top:180px;"
+                data-type="text"
+                data-effect="right(100)"
+                data-duration="1800"
+                data-delay="300"
+                data-ease="easeOutExpo">
+                <strong>Web технологий</strong>
+
+            </h1>
+
+            <h5 class="ms-layer text13"
+                style="left: 153px; top: 365px;"
+                data-type="text"
+                data-effect="bottom(45)"
+                data-duration="1800"
+                data-delay="500"
+                data-ease="easeOutExpo">
+
+                Начиная<br />от
+
+            </h5>
+
+            <h2 class="ms-layer text14"
+                style="left: 225px; top: 360px;"
+                data-type="text"
+                data-effect="bottom(45)"
+                data-duration="1800"
+                data-delay="500"
+                data-ease="easeOutExpo">
+
+                <strong>700<em>грн</em></strong>
+
+            </h2>
+
+        </div>
+        <!-- конец Слайда 1 -->
+        <!-- Слайд 2 -->
+        <div class="ms-slide slide-1" data-delay="5">
+
+            <div class="slide-pattern"></div>
+
+            <img src="~/assets/masterslider/blank.gif" data-src="Images/sliders/master/11.jpg" alt="" />
+
+            <h3 class="ms-layer text11 caps"
+                style="left: 115px; top: 80px;"
+                data-type="text"
+                data-effect="top(45)"
+                data-duration="1800"
+                data-delay="0"
+                data-ease="easeOutExpo">
+                Конструирование сайтов
+
+            </h3>
+
+            <h1 class="ms-layer text11 caps"
+                style="left: 115px; top: 120px;"
+                data-type="text"
+                data-effect="left(45)"
+                data-duration="1800"
+                data-delay="300"
+                data-ease="easeOutExpo">
+                с использованием
+
+            </h1>
+
+            <h1 class="ms-layer text12 caps"
+                style="left: 115px; top:180px;"
+                data-type="text"
+                data-effect="right(100)"
+                data-duration="1800"
+                data-delay="300"
+                data-ease="easeOutExpo">
+                <strong>ASP.NET</strong>
+
+            </h1>
+
+            <h5 class="ms-layer text13"
+                style="left: 153px; top: 365px;"
+                data-type="text"
+                data-effect="bottom(45)"
+                data-duration="1800"
+                data-delay="500"
+                data-ease="easeOutExpo">
+
+                Начиная<br />от
+
+            </h5>
+
+            <h2 class="ms-layer text14"
+                style="left: 225px; top: 360px;"
+                data-type="text"
+                data-effect="bottom(45)"
+                data-duration="1800"
+                data-delay="500"
+                data-ease="easeOutExpo">
+
+                <strong>400<em>$</em></strong>
+
+            </h2>
+
+
+        </div>
+        <!-- конец Слайда 2 -->
+        <!-- Слайд 3 -->
+        <div class="ms-slide slide-2" data-delay="5">
+
+            <div class="slide-pattern"></div>
+
+            <img src="~/assets/masterslider/blank.gif" data-src="Images/sliders/master/11.jpg" alt="" />
+
+            <h1 class="ms-layer text11 caps"
+                style="left: 115px; top: 120px;"
+                data-type="text"
+                data-effect="top(45)"
+                data-duration="1800"
+                data-delay="0"
+                data-ease="easeOutExpo">
+                Разработка и внедрение
+
+            </h1>
+
+            <h1 class="ms-layer text14 caps"
+                style="left: 115px; top:160px;"
+                data-type="text"
+                data-effect="right(45)"
+                data-duration="1800"
+                data-delay="300"
+                data-ease="easeOutExpo">
+                <strong>web-ориентированных</strong>
+
+            </h1>
+
+            <h1 class="ms-layer text14 caps"
+                style="left: 115px; top:210px;"
+                data-type="text"
+                data-effect="left(45)"
+                data-duration="1800"
+                data-delay="300"
+                data-ease="easeOutExpo">
+                систем
+
+            </h1>
+
+        </div>
+        <!-- конец Слайда 3 -->
+        <!-- Слайд 4 -->
+        <div class="ms-slide slide-3" data-delay="5">
+
+            <div class="slide-pattern"></div>
+
+            <img src="~/assets/masterslider/blank.gif" data-src="Images/sliders/master/11.jpg" alt="" />
+
+            <h3 class="ms-layer text11 caps"
+                style="left: 115px; top: 145px;"
+                data-type="text"
+                data-effect="top(45)"
+                data-duration="1800"
+                data-delay="0"
+                data-ease="easeOutExpo">
+                Проектирование современного
+
+            </h3>
+
+            <h1 class="ms-layer text14 caps"
+                style="left: 115px; top: 190px;"
+                data-type="text"
+                data-effect="left(80)"
+                data-duration="1800"
+                data-delay="300"
+                data-ease="easeOutExpo">
+                <strong>программного обеспечения</strong>
+
+            </h1>
+
+            <h1 class="ms-layer text14 caps"
+                style="left: 115px; top:235px;"
+                data-type="text"
+                data-effect="right(120)"
+                data-duration="1800"
+                data-delay="300"
+                data-ease="easeOutExpo">
+                <strong>под различные платформы</strong>
+
+            </h1>
+
+
+        </div>
+        <!-- конец Слайда 4 -->
+    </div>
+</div>
+<!-- конец Слайдера ======================================= -->
+
+<!-- Блок От идеи к реализации -->
+<div class="feature_section101">
+    <div class="container">
+
+        <h1 class="caps"><strong>От идеи к реализации</strong></h1>
+
+        <div class="clearfix margin_bottom5"></div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="idea wow fadeInLeft">
+                    <i class="fa fa-lightbulb-o idea-clr-1"></i>
+                    <h2><strong>Идея</strong></h2>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="idea wow fadeInUp">
+                    <i class="fa fa-pie-chart idea-clr-2"></i>
+                    <h2><strong>Анализ</strong></h2>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="idea wow fadeInRight">
+                    <i class="fa fa-list-alt idea-clr-3"></i>
+                    <h3><strong>Составление ТЗ</strong></h3>
+                </div>
+            </div>
+        </div>
+        <div class="row hidden-xs hidden-sm"></div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="idea wow fadeInLeft">
+                    <i class="fa fa-terminal idea-clr-4"></i>
+                    <h2><strong>Разработка</strong></h2>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="idea wow fadeInUp">
+                    <i class="fa fa-check-square-o idea-clr-5"></i>
+                    <h2><strong>Тестирование</strong></h2>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="idea wow fadeInRight">
+                    <i class="fa fa-laptop idea-clr-6"></i>
+                    <h2><strong>Реализация</strong></h2>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="clearfix margin_bottom6"></div>
+
+
+    </div>
+</div>
+<!-- end От идеи к реализации -->
+
+<!-- Блок Carroll -->
+<div class="sentence sty2">
+    <!-- section -->
+    <div class="sent_area">
+        <div class="container">
+
+            <h1 id="txt">
+                <strong>«Нужно бежать со всех ног, чтобы только оставаться на месте, а чтобы куда-то попасть, надо бежать как минимум вдвое быстрее!»</strong>
+            </h1>    
+            <h1 id="txt-author" class="text-right">Льюис Кэрролл</h1>
+            
+            
+
+
+        </div>
+    </div>
+    <!-- end section -->
+</div>
+<!-- end Carroll -->
+
+<!-- Блок Используемые технологии -->
+<div class="feature_section102">
+
+    <h1 class="caps">
+        <strong>Используемые технологии</strong>
+        <em>Основной набор средств используемых при разработке</em>
+    </h1>
+
+    <div class="clearfix margin_bottom5"></div>
+
+    <!-- plan 1 -->
+    <div class="plan">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-10 col-sm-7 col-md-7 col-lg-7 wow fadeInLeft">
+                    <h1 class="caps">Microsoft <b>.NET</b></h1>
+                    <h3 class="light">
+                        Платформа, состоящая из набора готовых функций 
+                        и решений, созданные корпорацией Microsoft для безопасной и 
+                        профессиональной разработки. 
+                    </h3>
+                    <h5>
+                        Часть .Net – это объектно-ориентированный язык C#, предназначенный для 
+                        разработки приложений в среде framework.
+                    </h5>
+                    <ul>
+                        <li>- .NET Apps</li>
+                        <li>- ASP.NET</li>
+                        <li>- Windows Forms</li>
+                        <li>- Windows Presentation Foundation</li>
+                        <li>- Windows Communication Foundation</li>
+                    </ul>
+                    <h3>
+                        Разработка программного обеспечения, сайтов и других Web-проектов
+                    </h3>
+                </div>
+                <!-- end section -->
+
+                <div class="col-xs-10 col-sm-5 col-md-5 col-lg-5 last wow fadeInRight"><img class="tech-img" src="~/Images/net.png" alt="" /></div><!-- end img -->
+            </div>
+        </div>
+    </div>
+    <!-- end plan 1 -->
+    <!-- plan 2 -->
+    <div class="plan two">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-10 col-sm-5 col-md-5 col-lg-5  wow fadeInLeft"><img class="tech-img" src="~/Images/web.png" alt="" /></div><!-- end img -->
+                <!-- section -->
+                <div class="col-xs-10 col-sm-7 col-md-7 col-lg-7 last wow fadeInRight">
+                    <h1><b>Web</b> технологии</h1>
+                    <h2 class="light">
+                        Используя Web-стек технологий разрабатываем сайты и другие web-системы.
+                    </h2>
+                    <p>Данный список реализовывается и на технологиях .NET</p>
+                    <ul>
+                        <li>- Сайт под ключ</li>
+                        <li>- Сайт-визитка</li>
+                        <li>- Лендинги</li>
+                        <li>- Интернет-магазины</li>
+                        <li>- Индивидуальные web-решения под заказ</li>
+                    </ul>
+
+                </div>
+                <!-- end section -->
+            </div>
+        </div>
+    </div>
+    <!-- end plan 2 -->
+    <!-- plan 3 -->
+    <div class="plan three">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-10 col-sm-7 col-md-7 col-lg-7 wow fadeInLeft">
+                    <h1 class="caps">Работа с базами данных</h1>
+                    <h3 class="light">
+                        База данных – это набор информации, организованные определенным способом для удобства доступа
+                        и обновления.
+                    </h3>
+                    <h4>
+                        MySQL – это система управления базами данных, 
+                        и часто используется для веб-сервисов, на которых необходимо управлять базами данных: блоги, форумы, галереи и т.д.
+                    </h4>
+                    <ul>
+                        <li>- MySQL</li>
+                        <li>- PostgreSQL</li>
+                        <li>- SQL Server</li>
+                    </ul>
+
+                </div><!-- end section -->
+
+                <div class="col-xs-10 col-sm-5 col-md-5 col-lg-5 last wow fadeInRight"><img class="tech-img" src="~/Images/db.png" alt="" /></div><!-- end img -->
+            </div>
+        </div>
+    </div>
+    <!-- end plan 3 -->
+</div>
+<!-- end Блок Используемые технологии -->
+
+<!-- Счетчик -->
+<div id="counts" class="counter feature_section104">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".0s">
+                <div class="icon">
+                    <i class="fa fa-briefcase"></i>
+                </div>
+                <div class="spincrement">28</div>
+                <span class="proxsence-counter-label">Готовых проектов</span>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+                <div class="icon">
+                    <i class="fa fa-users"></i>
+                </div>
+                <span class="spincrement">11</span>
+                <span class="proxsence-counter-label">Довольных клиентов</span>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
+                <div class="icon">
+                    <i class="fa fa-power-off"></i>
+                </div>
+                <span class="spincrement">218</span>
+                <span class="proxsence-counter-label">Дней на рынке</span>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.2s">
+                <div class="icon">
+                    <i class="fa fa-reorder"></i>
+                </div>
+                <span class="spincrement">267895</span>
+                <span class="proxsence-counter-label">Строк кода написано</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end Счетчик -->
+
+<!-- Блок Why choose our web hosting -->
+<div class="feature_section103">
+    <div class="container">
+
+        <h1 class="caps white wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+            <strong>Почему мы</strong>
+            <em>Наши преимущества</em>
+        </h1>
+
+        <div class="clearfix margin_bottom2"></div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 box wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+                <i class="fa fa-line-chart"></i>
+                <h4>У нас выработана четкая стратегия <div class="line"></div></h4>
+                <p class="gray">
+                    Разрабатываем план для каждого проекта, чтобы в итоге получить качественный продукт
+                </p>
+            </div><!-- end box -->
+
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 box two wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                <i class="fa fa-lightbulb-o"></i>
+                <h4>Подберем дизайн <br>под вас <div class="line"></div></h4>
+                <p class="gray">
+                    Дизайн строится с учетом пожеланий заказчика вплоть до создания индивидуальных и красивых страниц
+                </p>
+            </div><!-- end box -->
+
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 box two wow fadeInUp" data-wow-duration="1s" data-wow-delay=".8s">
+                <i class="fa fa-users"></i>
+                <h4>Сплоченый <br>коллектив <div class="line"></div></h4>
+                <p class="gray">
+                    Индивидуальные умения и креативный подход членов команды – это гарантия успеха продукта
+                </p>
+            </div><!-- end box -->
+
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 box two last wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.1s">
+                <i class="fa fa-comments-o"></i>
+                <h4>Учитываем все пожелания клиента <div class="line"></div></h4>
+                <p class="gray">
+                    Мы воплощаем все идеи наших заказчиков, чтобы осуществить задуманное клиентом в реальность
+                </p>
+            </div><!-- end box -->
+
+            <div class="clearfix"></div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 box three wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+                <i class="fa fa-sitemap"></i>
+                <h4>Опытные разработчики <div class="line"></div></h4>
+                <p class="gray">
+                    Каждый участник имеет большой багаж знаний и опыт работы во многих областях разработки
+                </p>
+            </div><!-- end box -->
+
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 box four wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                <i class="fa fa-clock-o"></i>
+                <h4>Точно и быстро <div class="line"></div></h4>
+                <p class="gray">
+                    Мы уважительно относимся к «дедлайнам» и выполняем корректно и в указанные сроки
+                </p>
+            </div><!-- end box -->
+
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 box four wow fadeInUp" data-wow-duration="1s" data-wow-delay=".8s">
+                <i class="fa fa-book"></i>
+                <h4>Создание контента <div class="line"></div></h4>
+                <p class="gray">
+                    Дизайн – это обертка, а контент – это внутреннее содержание (тексты, статьи) для популяризации продукта
+                </p>
+            </div><!-- end box -->
+
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 box four last wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.1s">
+                <i class="fa fa-usd"></i>
+                <h4>Доступные цены <div class="line"></div></h4>
+                <p class="gray">
+                    Мы хотим, чтобы нашим заказчикам было выгодно работать с нами
+                </p>
+            </div><!-- end box -->
+        </div>
+        <div class="clearfix margin_bottom7"></div>
+
+
+    </div>
+</div>
+<!-- end Блок Why choose our web hosting -->
+
+<!-- Блок Featured Services -->
+<div class="feature_section104">
+    <div class="container-fluid">
+        <div class="row">
+            <h1 class="caps"><strong>Воплощение идеи начинается с простых шагов</strong></h1>
+            <div class="col-sm-offset-3 col-md-offset-3 col-lg-offset-3 col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                
+                <div class="cforms">
+                    @using (Html.BeginForm("Contact", "PSe"))
+                    {
+
+                        <label class="label">Имя    <span class="err pull-right">@Html.ValidationMessageFor(m => m.Name)</span></label>
+                        <label class="input">
+                            @Html.TextBoxFor(m => m.Name, new { @class = "mmail" })
+                        </label>
+
+                        <div class="clearfix"></div>
+
+                        <label class="label">E-mail    <span class="err pull-right">@Html.ValidationMessageFor(m => m.Email)</span></label>
+                        <label class="input">
+                            @Html.TextBoxFor(m => m.Email, new { @class = "mmail" })
+                        </label>
+
+                        <label class="label">Тема    <span class="err pull-right">@Html.ValidationMessageFor(m => m.Subject)</span></label>
+                        <label class="input">
+                            @Html.TextBoxFor(m => m.Subject, new { @class = "mmail" })
+                        </label>
+
+                        <label class="label">Текст сообщения   <span class="err pull-right">@Html.ValidationMessageFor(m => m.Message)</span></label>
+                        <label class="textarea">
+                            @Html.TextAreaFor(m => m.Message, new { rows = 5, @class = "mmail"})
+                        </label>
+                        <label class="label">
+                            <button type="submit" class="btn four">Запустить процесс</button>
+                        </label>
+                    }
+                </div>
+                <div class="clearfix margin_bottom2"></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- end Блок Featured Services -->
+

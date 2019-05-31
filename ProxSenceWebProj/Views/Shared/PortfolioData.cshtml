@@ -1,0 +1,58 @@
+﻿@model ProxSence.Library.ProxSenceModels.PortfolioList
+<!--
+<div class="well">
+    @if(Model.Images != null)
+    {
+        <div class="pull-left" style="">
+            <img class="img-thumbnail" width="500" height="500"
+                 src="@Url.Action("GetImages", "Portfolio", new { Model.Id})" />
+        </div>
+    }
+    <h3>
+        <strong>@Model.ProjectName</strong>      
+    </h3>
+
+    <span class="pull-right label label-primary">@Model.ProjectCategory</span>
+    <span class="pull-right label label-primary">@Model.Description</span>
+
+</div>-->
+
+
+<div class="col-xs-6 col-sm-6 col-sm-4 col-md-4 col-lg-4">
+
+    <div class="grid wow flipInY portfolio-animdur-main">
+        <div class="item effect-bubba">
+            <a href="#modal-@Model.Id.ToString()" title="">
+                @if (Model.Images != null)
+                {
+                    <div class="pse-img" style="background-image: url( @Url.Action("GetImages", "Portfolio", new { Model.Id }) );"></div>
+                    <!--<img src="@Url.Action("GetImages", "Portfolio", new { Model.Id })" />-->
+                }
+                <div class="item-caption">
+                    <h2>@Model.ProjectName</h2>
+                    <p>@Model.ProjectCategory</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<div id="modal-@Model.Id.ToString()" class="popup-modal mfp-hide text-center">
+    @if (Model.Images != null)
+    {
+        <img class="scale-with-grid" src="@Url.Action("GetImages", "Portfolio", new { Model.Id})" />
+    }
+
+    <div class="description-box">
+        <h4>@Model.ProjectName</h4>
+        <p>@Model.Description</p>
+        <span class="categories"><i class="fa fa-tag"></i>@Model.ProjectCategory</span>
+    </div>
+
+    <div class="link-box">
+        <a class="popup-modal-dismiss">Close</a>
+    </div>
+
+</div>
+

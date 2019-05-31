@@ -1,0 +1,108 @@
+/*----------------------------------------------------
+	PAGE ABOUT 
+------------------------------------------------------*/
+
+/*page titles*/
+
+.page_title1 {
+	position: relative;
+	float: left;
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	padding: 198px 0px 59px 0px;
+	background: #17232d url(../images/lin.jpg) no-repeat center 98px; 
+}
+.page_title1 h1 {
+	color: #fff;
+	font-size: 62px;
+	font-weight: 700;
+	line-height: 65px;
+	text-transform: uppercase;
+}
+.page_title1 h1 em {
+	color: #fff;
+	font-weight: 400;
+	display: block;
+	font-size: 18px;
+	font-style: normal;
+	text-transform: none;
+}
+
+.page_title1.sty2, .page_title1.sty4 {
+	background: #17232d url(../images/about.jpg) no-repeat center top;
+}
+
+
+/* feature section 13 */
+
+.ways {
+	float: left;
+	width: 100%;
+	padding: 75px 0px 90px 0px;
+	text-align: center;
+	background: #f3f3f3;
+}
+.ways .one_half_less {
+	background: #fff;
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+}
+.ways img {
+	width: 100%;
+}
+.desc {
+	padding: 25px 30px 35px 30px;
+}
+
+.about-clr {
+	color: #2a363f;
+}
+
+
+
+/* feature section 14 */
+
+.command {
+	float: left;
+	width: 100%;
+	padding: 90px 0px 95px 0px;
+	text-align: center;
+	background: #f3f3f3;
+}
+.command .one_half {
+	float: left;
+	/*padding: 30px 35px;*/
+	background: #fff;
+	text-align: left;
+	border-radius: 3px;
+	transition: all 0.3s ease;
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+}
+.command .one_half:hover {
+	color: #fff;
+	background: #2a363f;
+}
+.command .one_half img {
+	float: left;
+	height: 260px;
+	margin-right: 25px;
+}
+.command .one_half h5 em {
+	display: block;
+	font-size: 13px;
+	font-style: normal;
+	color: #999;
+	font-weight: 300;
+}
+
+.command .desc {
+	padding: 25px 30px 5px 30px;
+}
+
+.text-about{
+	background: #EDF3DE url(../images/elements/bg.png) repeat left top;
+}
+
+.about-indent {
+	text-indent: 7mm;
+}

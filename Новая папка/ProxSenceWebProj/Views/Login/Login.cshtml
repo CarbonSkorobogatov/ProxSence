@@ -1,0 +1,35 @@
+﻿@model ProxSenceWebProj.Models.LoginModel
+
+@{
+    ViewBag.Title = "Панель администратора: Вход";
+    Layout = "~/Views/Shared/_ProxSenceAdminLayout.cshtml";
+}
+
+
+<div class="panel panel-success">
+    <div class="panel-heading row">
+        <br />
+        <div class="col-md-offset-4 col-md-4">
+            <h3 class="text-center">Авторизация</h3>
+        </div>
+    </div>
+    <div class="panel-body row">
+        <div class="col-md-offset-4 col-sm-4">
+            @using (Html.BeginForm())
+            {
+                @Html.ValidationSummary()
+                <div class="form-group input-group">
+                        <span class="input-group-addon">Имя пользователя :</span>
+                        @Html.TextBoxFor(m => m.UserName, new { @class = "form-control" })
+                </div>
+                <div class="form-group input-group">
+                        <span class="input-group-addon">Пароль :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        @Html.TextBoxFor(m => m.Password, new { @class = "form-control", @type = "password" })
+                </div>
+                <div class="text-center">
+                    <input type="submit" name="submit" class="btn btn-success" value="Войти"/>
+                </div>
+            }
+        </div>
+    </div>
+</div>

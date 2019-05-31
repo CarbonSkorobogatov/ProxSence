@@ -1,0 +1,60 @@
+﻿@model IEnumerable<ProxSence.Library.ProxSenceModels.PortfolioList>
+
+@{
+    ViewBag.Title = "Панель администратора: Проекты";
+    Layout = "~/Views/Shared/_ProxSenceAdminLayout.cshtml";
+}
+
+
+
+<div class="panel panel-success">
+    <div class="panel-heading">
+        <h3><strong>ProxSence | Админ панель</strong></h3>
+    </div>
+    <div class="panel-body text-right">
+
+    </div>
+    <div class="panel-body">
+        <table class="table table-hover table-striped table-condensed table-bordered">
+            <tr>
+                <th class="text-center"><strong>#</strong></th>
+                <th><strong>Имя проекта</strong></th>
+                <th class="text-center"><strong>Описание</strong></th>
+                <th class="text-center"><strong>Категория</strong></th>
+                <th><strong>Изображение</strong></th>
+                <th><strong>Тип изображения</strong></th>
+                <th><strong></strong></th>
+            </tr>
+            <tbody>
+
+                @foreach (var items in Model)
+                {
+                    <tr>
+                        <td><span class="label label-default">@items.Id</span></td>
+                        <td>@Html.ActionLink(items.ProjectName, "EditProject", new { items.Id })</td>
+                        <td>@items.Description</td>
+                        <td>@items.ProjectCategory</td>
+                        <td class="text-center">
+                            @Html.Raw("<img style='width:80px; height:60px;' src=\"data:image/jpeg;base64,"
+                                + Convert.ToBase64String(items.Images) + "\" />")
+                        </td>
+                        <td>@items.ImageType</td>
+                        <td class="text-right">
+                            @using (Html.BeginForm("Delete", "ProxSenceAdmin"))
+                            {
+                                @Html.Hidden("Id", items.Id)
+                                <input type="submit" class="btn btn-default btn-xs" value="Удалить" />
+                            }
+                            <!--<input class="btn btn-success" type="submit" name="up" value="Обновить" onclick="return confirm('ВНИМАНИЕ!\n\nДанные будут изменены!\n\nПодтвердите операцию!')">
+                            <input class="btn btn-danger" type="submit" name="del" value="Удалить" onclick="return confirm('ВНИМАНИЕ!\n\nДанная запись будет безвозвратно удалена.\n\nПодтвердите операцию!')"> -->
+
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="panel-footer ">
+        @Html.ActionLink("Добавить новый проект", "CreateProject", null, new { @class = "btn btn-default" })
+    </div>
+</div>

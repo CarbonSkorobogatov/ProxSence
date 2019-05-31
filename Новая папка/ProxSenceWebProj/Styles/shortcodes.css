@@ -1,0 +1,113 @@
+/*----------------------------------------------------
+   SHORTCODE ELEMENTS
+------------------------------------------------------*/
+.button.one {
+	color: #2a363f;
+	font-size: 14px;
+	text-transform: uppercase;
+	background: #fff;
+	padding: 13px 30px;
+	border-radius: 3px;
+	white-space: nowrap;
+	transition: all 0.3s ease;
+	font-family: 'Roboto', sans-serif;
+}
+.button.one:hover {
+	color: #fff;
+	background: #e67e22;
+}
+
+.button.two {
+	color: #2a363f;
+	font-size: 14px;
+	text-transform: uppercase;
+	border: 2px solid #2a363f;
+	padding: 9px 20px;
+	border-radius: 3px;
+	white-space: nowrap;
+	transition: all 0.3s ease;
+	font-family: 'Roboto', sans-serif;
+}
+.button.two:hover {
+	color: #fff;
+	background: #2a363f;
+}
+
+.button.three {
+	color: #2a363f;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	background: #fff;
+	padding: 10px 25px;
+	border-radius: 20px;
+	white-space: nowrap;
+	transition: all 0.3s ease;
+	font-family: 'Roboto', sans-serif;
+}
+.button.three:hover {
+	color: #fff;
+	background: #e67e22;
+}
+.button.three.dark {
+	color: #fff;
+	background: #2a363f;
+}
+.button.three.dark:hover {
+	color: #fff;
+	background: #e67e22;
+}
+
+.btn.four {
+	color: #2a363f;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 12px 45px;
+	border-radius: 3px;
+	white-space: nowrap;
+	transition: all 0.3s ease;
+	font-family: 'Roboto', sans-serif;
+	border: 1px solid #2a363f;
+}
+.btn.four:hover {
+	color: #fff;
+	background: #2a363f;
+	border: 1px solid #2a363f;
+}
+
+.button.five {
+	color: #2a363f;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 16px 45px;
+	border-radius: 3px;
+	white-space: nowrap;
+	transition: all 0.3s ease;
+	font-family: 'Roboto', sans-serif;
+	background: #fff;
+}
+.button.five:hover {
+	color: #fff;
+	background: #e67e22;
+}
+
+
+.button.six {
+	color: #2a363f;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+	padding: 10px 25px;
+	border-radius: 3px;
+	white-space: nowrap;
+	transition: all 0.3s ease;
+	font-family: 'Roboto', sans-serif;
+	border: 2px solid #2a363f;
+}
+.button.six:hover {
+	color: #fff;
+	background: #2a363f;
+	border: 2px solid #2a363f;
+}

@@ -1,0 +1,111 @@
+﻿@model ProxSenceWebProj.Models.PortfolioListModel
+
+@{
+    ViewBag.Title = "Portfolio";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<!-- Стили Портфолио -->
+<link rel="stylesheet" href="~/Styles/style-portfolio.css" type="text/css" />
+<link rel="stylesheet" href="~/Styles/style-portfolio-duration.css">
+<!-- Всплывающие модальные окна -->
+<link rel="stylesheet" href="~/assets/magnific-popup/magnific-popup.css">
+
+
+<header class="header">
+
+    <div class="container">
+        <div class="row">
+            <!-- Логотип -->
+            <div id="logo" class="logo-container col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                <a href="@Url.Action("Index", "Pse")"><div class="proxsence-logo"><span class="logo">PSe</span> ProxSence</div></a>
+            </div>
+
+            <!-- Основное меню -->
+            <div class="menu_main col-xs-8 col-sm-9 col-md-9 col-lg-9">
+
+                <div class="navbar yamm navbar-default">
+                    <!--
+                <div class="navbar-header">
+                  <div class="navbar-toggle .navbar-collapse .pull-right " data-toggle="collapse" data-target="#navbar-collapse-1"  >
+                    <button type="button" > <i class="fa fa-bars"></i></button>
+                  </div>
+                </div>-->
+
+                    <div id="navbar-collapse-1" class=" pull-right">
+
+                        <nav>
+
+                            <ul class="nav nav-pills">
+
+                                <li><a href="@Url.Action("Index", "PSe")" class="dropdown-toggle">Главная</a></li>
+
+                                <li><a href="@Url.Action("Portfolio", "Portfolio")" class="dropdown-toggle active">Портфолио</a></li>
+
+                                <li><a href="@Url.Action("About", "PSe")" class="dropdown-toggle">О нас</a></li>
+
+                                <li><a href="@Url.Action("Contact", "PSe")" class="dropdown-toggle">Контакты</a></li>
+
+                            </ul>
+
+                        </nav>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- конец Основное меню -->
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- Заголовок -->
+<div class="page_title1 sty4">
+    <div class="container">
+
+        <h1 class="caps wow fadeInLeft portfolio-animdur-main">Наши работы</h1>
+
+    </div>
+</div><!-- end Заголовок -->
+
+
+<div class="clearfix"></div>
+
+
+<div class="content_fullwidth less2">
+    <div class="container">
+        <div class="row">
+            <div class="filter-container">
+                @Html.Action("NavigationMenu", "Navigation")
+            </div>
+        </div>
+        <!-- Блок с проектами -->
+        <div class="row">
+        @foreach (var pse in Model.PList)
+        {
+
+            @Html.Partial("PortfolioData", pse)
+
+        }
+        </div>  
+        <!-- end Блок с проектами -->
+
+    </div>
+</div>
+
+
+
+<div class="clearfix"></div>
+
+<div class="row links">
+    <div class="col-md-2 col-md-offset-5 btn-group text-center">
+        @Html.PageLinks(Model.PageBreakModel, x => Url.Action("Portfolio", new { page = x, category = Model.Category }))
+    </div>
+</div>
+
+

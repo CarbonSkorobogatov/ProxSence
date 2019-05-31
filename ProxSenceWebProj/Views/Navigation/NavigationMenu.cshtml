@@ -1,0 +1,17 @@
+﻿@model IEnumerable<string>
+@Html.ActionLink("Все", "Portfolio", "Portfolio", null,
+            new { @class = "btn-lg filter" })
+@foreach(var link in Model)
+{
+    @Html.RouteLink(link, new
+{
+    controller = "Portfolio",
+    action = "Portfolio",
+    category = link,
+    page = 1
+}, new
+{
+    @class = "btn-lg filter"
+                + (link == ViewBag.SelectedCategory ? " active-filter" : "")
+})
+}

@@ -1,0 +1,230 @@
+﻿
+@{
+    ViewBag.Title = "About";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Стили О нас -->
+<link rel="stylesheet" href="~/Styles/style-about.css" type="text/css" />
+
+<header class="header">
+
+    <div class="container">
+        <div class="row">
+            <!-- Логотип -->
+            <div id="logo" class="logo-container col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                <a href="@Url.Action("Index", "PSe")"><div class="proxsence-logo"><span class="logo">PSe</span> ProxSence</div></a>
+            </div>
+
+            <!-- Основное меню -->
+            <div class="menu_main col-xs-8 col-sm-9 col-md-9 col-lg-9">
+
+                <div class="navbar yamm navbar-default">
+                    <!--
+                <div class="navbar-header">
+                  <div class="navbar-toggle .navbar-collapse .pull-right " data-toggle="collapse" data-target="#navbar-collapse-1"  >
+                    <button type="button" > <i class="fa fa-bars"></i></button>
+                  </div>
+                </div>-->
+
+                    <div id="navbar-collapse-1" class=" pull-right">
+
+                        <nav>
+
+                            <ul class="nav nav-pills">
+
+                                <li><a href="@Url.Action("Index", "PSe")" class="dropdown-toggle">Главная</a></li>
+
+                                <li><a href="@Url.Action("Portfolio", "Portfolio")" class="dropdown-toggle">Портфолио</a></li>
+
+                                <li><a href="@Url.Action("About", "PSe")" class="dropdown-toggle active">О нас</a></li>
+
+                                <li><a href="@Url.Action("Contact", "PSe")" class="dropdown-toggle">Контакты</a></li>
+
+                            </ul>
+
+                        </nav>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- конец Основное меню -->
+        </div>
+    </div>
+
+</header>
+
+<!-- Заголовок -->
+<div class="page_title1 sty2">
+    <div class="container alileft">
+
+        <h1 class="wow fadeInLeft" data-wow-duration="1.1s" data-wow-delay="0.3s">WHO WE ARE</h1>
+
+    </div>
+</div>
+<!-- end Заголовок -->
+
+
+<div class="clearfix margin_bottom4"></div>
+
+<!-- Блок с описанием -->
+<div class="container alicent">
+
+    <h3 class="light wow fadeInUp" data-wow-duration="1.1s" data-wow-delay="0.4s">Мы сплоченная команда разработчиков специализирующихся в сфере разработки web-проектов и программного обеспечения на различных платформах. </h3>
+</div>
+
+<div class="clearfix margin_bottom4"></div>
+
+<div class="ways">
+    <div class="container">
+
+        <h2 class="caps wow fadeInDown" data-wow-duration="1.1s" data-wow-delay="0s"><strong>Чем мы занимаемся</strong></h2>
+
+        <div class="margin_bottom2"></div>
+
+        <div class="one_half_less wow fadeInLeft" data-wow-duration="1.1s" data-wow-delay="0.2s">
+
+            <img src="~/Images/web-sol.png" alt="" />
+            <div class="desc">
+                <h5>Разработка веб-ресурсов</h5>
+                <p class="bigtfont">Мы создаем и наполняем веб-ресурсы используя различные технологии на протяжении всех этапов проектирования. Сюда входит создание обычных сайтов, сайтов-визиток, интернет-магазинов, лендингов, других специализированных веб-ресурсов, ориентированных на индивидуальное решение задач.</p>
+            </div>
+        </div>
+
+        <div class="one_half_less last wow fadeInRight" data-wow-duration="1.1s" data-wow-delay="0.2s">
+
+            <img src="~/Images/soft.jpg" alt="" />
+            <div class="desc">
+                <h5>Разработка прикладного программного обеспечения</h5>
+                <p class="bigtfont">С использованием Microsoft .NET технологий мы создаем клиентское прикладное программное обеспечение (или Desktop приложение) для автоматизации некоторых процессов в работе, а также реализации других целей заказчика.</p>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+
+
+<div class="clearfix margin_bottom9"></div>
+
+
+<div class="container alicent">
+
+    <div class="row">
+        <div class="clearfix margin_bottom2"></div>
+
+        <h2 class="caps wow fadeInRight" data-wow-duration="0.4s" data-wow-delay="0.1s"><strong>Что мы используем</strong></h2>
+
+        <div class="clearfix margin_bottom3"></div>
+
+        <div class="block col-sm-3 col-md-3 col-lg-3  wow flipInY" data-wow-duration=".5s" data-wow-delay=".5s">
+            <img src="~/Images/netsm.png" alt="" />
+        </div>
+        <div class="block col-sm-3 col-md-3 col-lg-3  wow flipInY" data-wow-duration=".5s" data-wow-delay=".6s">
+            <img src="~/Images/webmin.png" alt="" />
+        </div>
+        <div class="block col-sm-3 col-md-3 col-lg-3  wow flipInY" data-wow-duration=".5s" data-wow-delay=".7s">
+            <img src="~/Images/yii2.png" alt="" />
+        </div>
+        <div class="block col-sm-3 col-md-3 col-lg-3  wow flipInY" data-wow-duration=".5s" data-wow-delay=".8s">
+            <img src="~/Images/qt.png" alt="" />
+        </div>
+    </div>
+    
+
+</div>
+
+
+<div class="clearfix margin_bottom7"></div>
+
+
+<div class="command">
+    <div class="container">
+
+        <h2 class="caps"><strong>Наша команда</strong></h2>
+
+        <div class="clearfix margin_bottom3"></div>
+
+        <div class="one_half wow slideInLeft" data-wow-duration="0.8s" data-wow-delay="0.1s">
+            <div>
+                <img src="~/Images/Andrew.jpg" alt="" />
+            </div>
+            <div class="desc">
+                <h5 class="sitecolor">Андрей Медведев <em>Team Lead, .NET developer, Backend</em></h5>
+                <p>
+                    Программист с семилетним стажем разработки средней и большой сложности проектов с использованием языков C++, C#, Java. 
+                    Из важных качеств можно выделить стремление к совершенному результату и желание «выжать» максимум из идеи.
+                </p>
+            </div>
+        </div>
+
+        <div class="one_half last wow slideInRight" data-wow-duration="0.8s" data-wow-delay="0.1s">
+            <div>
+                <img src="~/Images/Vitali.jpg" alt="" />
+            </div>
+            <div class="desc">
+                <h5 class="sitecolor">Виталий Николенко <em>Fullstack Web developer, Software engeneering</em></h5>
+                <p>
+                    Веб-программист и разработчик прикладного программного обеспечения на языках С++, С#, PHP и frontend технологий.
+                    Из качеств можно выделить аналитическое мышление с индивидуальным подходом к задаче.
+                </p>
+            </div>
+        </div>
+
+        <div class="clearfix margin_bottom3"></div>
+
+        <div class="one_half wow slideInLeft" data-wow-duration="0.8s" data-wow-delay="0.1s">
+            <div>
+                <img src="~/Images/Konstantin.jpg" alt="" />
+            </div>
+            <div class="desc">
+                <h5 class="sitecolor">Константин Сологуб <em>Content-manager, copywriting</em></h5>
+                <p>
+                    Специалист в области контента занимается наполнением сайтов и генерированием идей.
+                    Совместно с отличными навыками копирайтинга, грамотным владением тремя языками и индивидуальным творческим подходом к работе всегда достигает поставленных целей. 
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="clearfix"></div>
+
+
+<div class="feature_section6 text-about">
+    <div class="container">
+        <h4 class="caps"><strong>О нас</strong></h4>
+        <h5 class="light alileft about-indent">
+            В нынешнее время невозможно представить жизнь без компьютера и интернета. Информационные технологии заметно облегчили нашу жизнь: производство становится всё более автоматизировано, интернет помогает развивать бизнес, а энергозатратность уменьшилась в несколько раз. Теперь ценность информационных технологий никто не отрицает. Даже начинающие предприниматели в первую очередь обращают внимание на информационную составляющую: разработка веб-приложений, программное обеспечение, базы данных – список можно продолжать бесконечно. «Нужно бежать со всех ног, чтобы только не оставаться на месте, а чтобы куда-то попасть, надо бежать как минимум вдвое быстрее!» — крылатое выражение Льюиса Кэрролла очень подходит под тенденции современного общества.
+            И казалось бы, все знают о важности IT (сокращение от англ. Information Technology), но не каждый может освоить все технические моменты и эффективно реализовать их. Именно поэтому наша команда предлагает вам свою помощь в этой полезной и необходимой сфере.
+            Команда состоит из молодых программистов, которые занимаются такими задачами, как:
+        </h5>    
+        <ul class="light alileft about-clr about-indent">
+            <li>Проектирование и разработка программного обеспечения;</li>
+            <li>Веб-программирование;</li>
+            <li>Внедрение ПО и устранение ошибок.</li>
+        </ul>
+        <h5 class="light alileft about-indent">Главные преимущества нашей команды:</h5>
+        <ul class="light alileft about-clr about-indent">
+            <li>Индивидуальный подход к конкретной задаче;</li>
+            <li>Ответственное отношение к срокам выполнения;</li>
+            <li>Консультации и техническая поддержка клиентов.</li>
+        </ul>
+        <h5 class="light alileft text-center">
+            «Лучше взять и изобрести завтрашний день, чем переживать о том, что вчерашний был так себе» Стив Джобс.
+            Мы поможем вам реализовать ваши идеи и проекты в жизнь. Давайте изобретать завтрашний день вместе.
+        </h5>
+
+    </div>
+</div><!-- end featured section -->
+
+
+
+
+
+<div class="clearfix"></div>
+

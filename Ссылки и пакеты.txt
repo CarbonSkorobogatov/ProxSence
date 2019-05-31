@@ -1,0 +1,8 @@
+Сборки которые были установленны:
+	Ninject -version 3.0.1.10
+	Ninject.Web.Common - version 3.0.0.7
+	Ninject.MVC3 -version 3.0.06
+	Moq -version 4.1.1309.1617
+	Microsoft.Aspnet.MVC -version 5.0.0
+Зависимости ссылок:
+	ProxSence.Library System.ComponentModel.DataAnnotations

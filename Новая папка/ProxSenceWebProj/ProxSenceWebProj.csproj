@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{986A6B0C-F8DD-4519-804A-A6F20FD33011}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProxSenceWebProj</RootNamespace>
+    <AssemblyName>ProxSenceWebProj</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Moq">
+      <HintPath>..\packages\Moq.4.1.1309.1617\lib\net40\Moq.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject">
+      <HintPath>..\packages\Ninject.3.0.1.10\lib\net45-full\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject.Web.Common">
+      <HintPath>..\packages\Ninject.Web.Common.3.0.0.7\lib\net45-full\Ninject.Web.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject.Web.Mvc">
+      <HintPath>..\packages\Ninject.MVC3.3.0.0.6\lib\net45-full\Ninject.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebActivator">
+      <HintPath>..\packages\WebActivator.1.5.3\lib\net40\WebActivator.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.0.0\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.0.0\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.0.0\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.0.0\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.0.0\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.0.0\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\animations\css\animations.min.css" />
+    <Content Include="assets\animations\js\animations.min.js" />
+    <Content Include="assets\carouselowl\AjaxLoader.gif" />
+    <Content Include="assets\carouselowl\arrow-next.png" />
+    <Content Include="assets\carouselowl\arrow-prev.png" />
+    <Content Include="assets\carouselowl\custom.js" />
+    <Content Include="assets\carouselowl\glyphicons-halflings-white.png" />
+    <Content Include="assets\carouselowl\grabbing.png" />
+    <Content Include="assets\carouselowl\owl.carousel.css" />
+    <Content Include="assets\carouselowl\owl.carousel.min.js" />
+    <Content Include="assets\carouselowl\owl.transitions.css" />
+    <Content Include="assets\font-awesome\css\font-awesome.min.css" />
+    <Content Include="assets\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="assets\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="assets\jquery\jquery.js" />
+    <Content Include="assets\magnific-popup\magnific-popup.css" />
+    <Content Include="assets\magnific-popup\magnific-popup.js" />
+    <Content Include="assets\mainmenu\bootstrap.min.css" />
+    <Content Include="assets\mainmenu\bootstrap.min.js" />
+    <Content Include="assets\mainmenu\jquery.sticky.js" />
+    <Content Include="assets\mainmenu\menu.css" />
+    <Content Include="assets\mainmenu\sticky.js" />
+    <Content Include="assets\masterslider\blank.gif" />
+    <Content Include="assets\masterslider\jquery.easing.min.js" />
+    <Content Include="assets\masterslider\masterslider.min.js" />
+    <Content Include="assets\masterslider\masterslider.min.js.map" />
+    <Content Include="assets\masterslider\skins\default\light-skin-1 - Copy.png" />
+    <Content Include="assets\masterslider\skins\default\light-skin-1-retina.png" />
+    <Content Include="assets\masterslider\skins\default\light-skin-1.png" />
+    <Content Include="assets\masterslider\skins\default\style.css" />
+    <Content Include="assets\masterslider\skins\default\video-icon.png" />
+    <Content Include="assets\masterslider\style\arrows.png" />
+    <Content Include="assets\masterslider\style\blank.gif" />
+    <Content Include="assets\masterslider\style\grab.cur" />
+    <Content Include="assets\masterslider\style\grab.png" />
+    <Content Include="assets\masterslider\style\grabbing.cur" />
+    <Content Include="assets\masterslider\style\grabbing.png" />
+    <Content Include="assets\masterslider\style\loading-1-dark.gif" />
+    <Content Include="assets\masterslider\style\loading-1-light.gif" />
+    <Content Include="assets\masterslider\style\loading-1.gif" />
+    <Content Include="assets\masterslider\style\loading-2-dark.gif" />
+    <Content Include="assets\masterslider\style\loading-2-light.gif" />
+    <Content Include="assets\masterslider\style\loading-2.gif" />
+    <Content Include="assets\masterslider\style\masterslider.css" />
+    <Content Include="assets\masterslider\style\skin.png" />
+    <Content Include="assets\masterslider\style\video-close-btn.png" />
+    <Content Include="assets\masterslider\style\video-shadow.png" />
+    <Content Include="assets\scrolltotop\totop.js" />
+    <Content Include="assets\spincrement\jquery.spincrement.js" />
+    <Content Include="assets\wow\animate.css" />
+    <Content Include="assets\wow\wow.min.js" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="Images\about.jpg" />
+    <Content Include="Images\Andrew.jpg" />
+    <Content Include="Images\blog\facebook.png" />
+    <Content Include="Images\blog\flickr.png" />
+    <Content Include="Images\blog\google-plus.png" />
+    <Content Include="Images\blog\linkedin.png" />
+    <Content Include="Images\blog\rss.png" />
+    <Content Include="Images\blog\Thumbs.db" />
+    <Content Include="Images\blog\twitter.png" />
+    <Content Include="Images\blog\vimeo.png" />
+    <Content Include="Images\blog\yahoo.png" />
+    <Content Include="Images\blog\youtube-logo.png" />
+    <Content Include="Images\blog\youtube.png" />
+    <Content Include="Images\colors\green\accordion-ico.png" />
+    <Content Include="Images\colors\green\h-line5.png" />
+    <Content Include="Images\colors\green\logo.png" />
+    <Content Include="Images\colors\green\minus-color.png" />
+    <Content Include="Images\colors\green\plus-color.png" />
+    <Content Include="Images\colors\green\Thumbs.db" />
+    <Content Include="Images\contact.jpg" />
+    <Content Include="Images\db.png" />
+    <Content Include="Images\elements\bg.png" />
+    <Content Include="Images\elements\dropcap_gray.png" />
+    <Content Include="Images\elements\icon-remove.png" />
+    <Content Include="Images\elements\pattern1.png" />
+    <Content Include="Images\elements\pattern10.png" />
+    <Content Include="Images\elements\pattern11.png" />
+    <Content Include="Images\elements\pattern4.png" />
+    <Content Include="Images\elements\pattern6.png" />
+    <Content Include="Images\elements\pattern7.png" />
+    <Content Include="Images\elements\Thumbs.db" />
+    <Content Include="Images\favicon.png" />
+    <Content Include="Images\footer-bg-graph2.png" />
+    <Content Include="Images\gray-full.jpg" />
+    <Content Include="Images\Konstantin.jpg" />
+    <Content Include="Images\net.png" />
+    <Content Include="Images\netsm.png" />
+    <Content Include="Images\portfolio.jpg" />
+    <Content Include="Images\Qt.png" />
+    <Content Include="Images\scroll-top-arrow.png" />
+    <Content Include="Images\site-img101.png" />
+    <Content Include="Images\sliders\master\11.jpg" />
+    <Content Include="Images\sliders\master\1a1.jpg" />
+    <Content Include="Images\sliders\master\f11.jpg" />
+    <Content Include="Images\sliders\master\h11.jpg" />
+    <Content Include="Images\sliders\master\q11.jpg" />
+    <Content Include="Images\sliders\master\qa11.jpg" />
+    <Content Include="Images\sliders\master\r11.jpg" />
+    <Content Include="Images\sliders\Thumbs.db" />
+    <Content Include="Images\soft.jpg" />
+    <Content Include="Images\Vitali.jpg" />
+    <Content Include="Images\web-sol.png" />
+    <Content Include="Images\web.png" />
+    <Content Include="Images\webmin.png" />
+    <Content Include="Images\yii2.png" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <None Include="Properties\PublishProfiles\proxsence.pubxml" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\custom.js" />
+    <Content Include="Scripts\jquery-3.1.1.js" />
+    <Content Include="Scripts\jquery-3.1.1.min.js" />
+    <Content Include="Scripts\jquery-3.1.1.min.map" />
+    <Content Include="Scripts\jquery-3.1.1.slim.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
+    <Content Include="Scripts\jquery.lettering.js" />
+    <Content Include="Scripts\jquery.textillate.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\map.js" />
+    <Content Include="Scripts\spincrement.js" />
+    <Content Include="Styles\bootstrap-theme.css" />
+    <Content Include="Styles\bootstrap-theme.css.map" />
+    <Content Include="Styles\bootstrap-theme.min.css" />
+    <Content Include="Styles\bootstrap-theme.min.css.map" />
+    <Content Include="Styles\bootstrap.css" />
+    <Content Include="Styles\bootstrap.css.map" />
+    <Content Include="Styles\bootstrap.min.css" />
+    <Content Include="Styles\bootstrap.min.css.map" />
+    <Content Include="Styles\font-awesome.min.css" />
+    <Content Include="Styles\green.css" />
+    <Content Include="Styles\pattern-six.css" />
+    <Content Include="Styles\reset.css" />
+    <Content Include="Styles\responsive-leyouts.css" />
+    <Content Include="Styles\shortcodes.css" />
+    <Content Include="Styles\style-about.css" />
+    <Content Include="Styles\style-contact-duration.css" />
+    <Content Include="Styles\style-contact.css" />
+    <Content Include="Styles\style-duration.css" />
+    <Content Include="Styles\style-portfolio-duration.css" />
+    <Content Include="Styles\style-portfolio.css" />
+    <Content Include="Styles\style.css" />
+    <Content Include="Views\Login\Login.cshtml" />
+    <Content Include="Views\Navigation\NavigationMenu.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Views\Portfolio\Portfolio.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Views\ProxSenceAdmin\EditProject.cshtml" />
+    <Content Include="Views\ProxSenceAdmin\Index.cshtml" />
+    <Content Include="Views\PSe\About.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Views\PSe\Contact.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Views\PSe\Index.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Views\Shared\PortfolioData.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Views\Shared\_Layout.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Views\Shared\_ProxSenceAdminLayout.cshtml" />
+    <Content Include="Views\web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\NinjectWebCommon.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\PSeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\NavigationController.cs" />
+    <Compile Include="Controllers\PortfolioController.cs" />
+    <Compile Include="Controllers\ProxSenceAdminController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LoginModel.cs" />
+    <Compile Include="Models\PageBreakModel.cs" />
+    <Compile Include="Models\Porfolio.cs" />
+    <Compile Include="Models\PortfolioListModel.cs" />
+    <Compile Include="ProjectInfrastructure\FormData\AutorizationForms.cs" />
+    <Compile Include="ProjectInfrastructure\NinjectResolver.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SiteHH\PageBreak.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <None Include="Scripts\jquery-3.1.1.intellisense.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProxSence.Library\ProxSence.Library.csproj">
+      <Project>{44fe5508-1c6a-4344-821e-d475279bbe88}</Project>
+      <Name>ProxSence.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2390</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:2390/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

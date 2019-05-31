@@ -1,0 +1,140 @@
+﻿@model ProxSence.Library.ProxSenceModels.FeedbackModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!-- Стили Контакты -->
+<link rel="stylesheet" href="~/Styles/style-contact.css" type="text/css" />
+<link rel="stylesheet" href="~/Styles/style-contact-duration.css">
+
+<header class="header">
+
+    <div class="container">
+        <div class="row">
+            <!-- Логотип -->
+            <div id="logo" class="logo-container col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                <a href="@Url.Action("Index", "PSe")"><div class="proxsence-logo"><span class="logo">PSe</span> ProxSence</div></a>
+            </div>
+
+            <!-- Основное меню -->
+            <div class="menu_main col-xs-8 col-sm-9 col-md-9 col-lg-9">
+
+                <div class="navbar yamm navbar-default">
+                    <!--
+                <div class="navbar-header">
+                  <div class="navbar-toggle .navbar-collapse .pull-right " data-toggle="collapse" data-target="#navbar-collapse-1"  >
+                    <button type="button" > <i class="fa fa-bars"></i></button>
+                  </div>
+                </div>-->
+
+                    <div id="navbar-collapse-1" class=" pull-right">
+
+                        <nav>
+
+                            <ul class="nav nav-pills">
+
+                                <li><a href="@Url.Action("Index", "PSe")" class="dropdown-toggle">Главная</a></li>
+
+                                <li><a href="@Url.Action("Portfolio", "Portfolio")" class="dropdown-toggle">Портфолио</a></li>
+
+                                <li><a href="@Url.Action("About", "PSe")" class="dropdown-toggle">О нас</a></li>
+
+                                <li><a href="@Url.Action("Contact", "PSe")" class="dropdown-toggle active">Контакты</a></li>
+
+                            </ul>
+
+                        </nav>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- конец Основное меню -->
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- Заголовок -->
+<div class="page_title1 sty4">
+    <div class="container alileft">
+
+        <h1 class="wow fadeInLeft contact-animdur-main">Свяжитесь с нами</h1>
+
+    </div>
+</div><!-- end Заголовок -->
+
+
+<div class="clearfix"></div>
+
+
+<div class="content_fullwidth less2">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+
+                <p>Здесь Вы сможете связаться с нами по любому интересующему Вас вопросу. Все поля являются обязательными для заполнения. В тексте сообщения также допускается указывать и другие виды связи. </p>
+                <br />
+                <p>Все указанные контактные данные являются активными.</p>
+                <br /><br />
+
+                <div class="cforms">
+
+
+                    <div id="form_status"></div>
+                    @using (Html.BeginForm())
+                    {
+
+                        <label class="label">Имя <em>*</em>   <span class="err pull-right">@Html.ValidationMessageFor(m => m.Name)</span></label>
+                        <label class="input">
+                            @Html.TextBoxFor(m => m.Name)
+                        </label>
+                    
+                        <div class="clearfix"></div>
+
+                        <label class="label">E-mail <em>*</em>   <span class="err pull-right">@Html.ValidationMessageFor(m => m.Email)</span></label>
+                        <label class="input">
+                            @Html.TextBoxFor(m => m.Email)
+                        </label>
+                    
+                        <label class="label">Тема <em>*</em>   <span class="err pull-right">@Html.ValidationMessageFor(m => m.Subject)</span></label>
+                        <label class="input">
+                            @Html.TextBoxFor(m => m.Subject)
+                        </label>
+                    
+                        <label class="label">Текст сообщения <em>*</em>   <span class="err pull-right">@Html.ValidationMessageFor(m => m.Message)</span></label>
+                        <label class="textarea">
+                            @Html.TextAreaFor(m => m.Message, new { rows = 5})
+                        </label>
+                    
+                        <button type="submit" class="button">Отправить</button>
+                    }
+
+
+                </div>
+
+            </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 last">
+
+                <div class="address_info wow fadeInRight contact-animdur-main">
+                    <h4 class="caps">Наш адрес</h4>
+                    <ul>
+                        <li> <strong>ProxSence</strong><br /></li>
+                        <li>Украина, Одесса</li>
+                        <li>E-mail: <a href="mailto:proxsence@gmail.com">proxsence@gmail.com</a></li>
+                        <li>Официальный сайт: <a href="@Url.Action("Index", "PSe")">proxsence.net</a></li>
+                    </ul>
+                </div>
+
+
+                <div id="map" class="map"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="clearfix"></div>
+
